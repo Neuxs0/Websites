@@ -1,0 +1,30 @@
+body {
+    height: 125vh;
+    background-size: 100px;
+    font-family: cursive;
+    margin-top: 80px;
+    background-color: rgb(40, 40, 40);
+}
+
+main {
+    color: rgb(40, 40, 40);
+}
+
+header {
+    background-color: rgb(60, 60, 60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    background-color: black;
+    color: aqua;
+    top: auto;
+    left: auto;
+    right: auto;
+    height: fit-content;
+}

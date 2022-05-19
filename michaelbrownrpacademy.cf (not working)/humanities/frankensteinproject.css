@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(40,40,40);
+    position: relative;
+    top:100px;
+}
+
+header {
+    background-color: rgb(60, 60, 60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+hr {
+    color: rgba(0,0,0,0);
+    border: 0px;
+}
+
+h1 {
+    font-family:Georgia;
+    color: darkgreen;
+}
+
+button {
+    background-color: chocolate;
+    margin-top: auto;
+}
