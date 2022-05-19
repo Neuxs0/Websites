@@ -1,0 +1,147 @@
+body {
+    position: relative;
+    padding: 25px;
+    height: 125vh;
+    background-size: 100px;
+    font: 16px/1.5 sans-serif;
+    margin-top: 80px;
+    background-color: white;
+}
+main {
+    color: rgb(40, 40, 40);
+}
+#sources {
+  position: fixed;
+  display: block;
+  border: 2px;
+  background-color: aqua;
+}
+#hr1 {
+  border: 0px;
+  border-color: rgb(40, 40, 40);
+}
+#title1 {
+  text-align: center;
+  color: rgb(255, 0, 0);
+  font-family: Georgia;
+}
+#h1-1 {
+    text-align: center;
+    color: whitesmoke;
+}
+#h4-1 {
+    text-align: center;
+    color: wheat;
+}
+#p1 {
+    color: whitesmoke;
+    text-align: left;
+}
+.boxed {
+    border: 1px solid white;
+    width: 25vh;
+    text-align: center;
+    margin-left: auto
+}
+.boxed2 {
+    border: 1px solid white;
+    width: 25vh;
+    text-align: center;
+}
+.boxed3 {
+    border: 1px solid white;
+    width: 25vh;
+    text-align: center;
+    margin-right: auto;
+}
+.img1 {
+    text-align: center;
+    margin: auto;
+}
+#site-header {
+    position: fixed;
+    height: 70px;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all .3s ease;
+    box-shadow: 0 1px 25px rgba(0,0,0, .1);
+}
+#site-header.hide {
+    top: -53px;
+}
+:root {
+    --white: whitesmoke;
+    --black: #221f1f;
+    --lightpurple: rgb(60,60,60);
+    --darkgray: #1e1f26;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .trigger-menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2;
+    background: var(--lightpurple);
+    transition: transform 0.4s;
+  }
+  
+  .page-header .trigger-menu {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--white);
+    letter-spacing: 0.2em;
+  }
+  
+  .page-header .trigger-menu svg {
+    fill: var(--white);
+    margin-right: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .page-header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    text-align: center;
+    padding: 15vh 0 5vh;
+    overflow: auto;
+    z-index: 1;
+    background: var(--lightpurple);
+  }
+  
+  .lottie-wrapper {
+    position: fixed;
+    bottom: 50px;
+    right: 25px;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .scroll-down .trigger-menu-wrapper {
+    transform: translate3d(0, -100%, 0);
+  }
+  
+  .scroll-up .trigger-menu-wrapper {
+    transform: none;
+  }
+  
+.scroll-up:not(.menu-open) .trigger-menu-wrapper {
+    background: var(--lightpurple);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+}

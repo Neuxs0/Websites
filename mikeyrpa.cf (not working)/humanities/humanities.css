@@ -1,0 +1,36 @@
+body {
+    height: 125vh;
+    background-size: 100px;
+    font-family: sans-serif;
+    margin-top: 80px;
+    background-color: rgb(40, 40, 40);
+}
+
+main {
+    color: rgb(40, 40, 40);
+}
+
+header {
+    background-color: rgb(60, 60, 60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+}
+
+#animalminiproject {
+    border-color: rgb(255, 165, 165);
+    border-width: 3px;
+    background-color: rgb(200, 0, 0);
+}
+
+#hr1 {
+    border: none;
+}
+
+#pre-colonial_america_to_colonial_america {
+    background-color: rgb(0, 0, 255);
+    border-color: rgb(255, 0, 0);
+    border-width: 3px;
+}

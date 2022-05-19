@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mikey's projects Humanities Animal mini-project | RPA</title>
+        <meta name="author" content="Mikey">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="animalminiproject.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <nav>
+              <div class="trigger-menu-wrapper">
+                <button class="trigger-menu">
+                <span>Parrots</span>
+                </button>
+              </div>
+            </nav>
+        </header>
+              <a href="" role="button" aria-label="Toggle menu" class="lottie-wrapper">
+                <lottie-player src="https://assets10.lottiefiles.com/datafiles/9gIwZ2uiiKglyb0/data.json" style="width: 60px; height: 60px;"></lottie-player>
+              </a>
+        <main>
+          <button id="homebutton" style="background-color: blue;">
+            <a href="http://mikeyrpa.cf"><h3 id="h3-1" style="color: rgb(0, 0, 0);">Home</h3></a>
+        </button>
+            <h4 id="h4-1">Made by: Mikey</h4>
+            <center id="center1">
+                <p id="p1" class="boxed">
+                    Habitat
+                </p>
+                <p id="p1" class="boxed">
+                    These unique birds, parrots, live in areas such as woodlands, rainforests, palm forests, savannas, grasslands, desert edges, scrubland, etc.
+                </p>
+            </center>
+            <center>
+                <p id="p1" class="boxed2">
+                    Weight, Sizes, and color
+                </p>
+                <p id="p1" class="boxed2">
+                    Parrot weight can be between 63 grams and 3.5 pounds.
+                    Parrot sizes can rang from 2 1/4 to 40 inches.
+                    Both babies and adults are colorful and many different colors.
+                </p>
+            </center>
+            <center>
+                <p id="p1" class="boxed3">
+                    Diet
+                </p>
+                <p id="p1" class="boxed3">
+                    A parrot's diet usually contains nuts, flowers, fruit, buds, seeds, and insects.
+                </p>
+            </center>
+
+            <div class="img1">
+                <img src="img/parrot.png">
+            </div>
+
+            <div>
+                <center>
+                    <button>
+                        <a href="interestingfacts.html" style="color: whitesmoke;">Click here for interesting facts!</a>
+                    </button>
+                </center>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
+
+<script>
+    const body = document.body;
+const triggerMenu = document.querySelector(".page-header .trigger-menu");
+const nav = document.querySelector(".page-header nav");
+const lottieWrapper = document.querySelector(".lottie-wrapper");
+const lottiePlayer = document.querySelector("lottie-player");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+triggerMenu.addEventListener("click", () => {
+  body.classList.toggle("menu-open");
+});
+
+lottieWrapper.addEventListener("click", (e) => {
+  e.preventDefault();
+  triggerMenu.click();
+  body.classList.toggle("menu-open-with-lottie");
+});
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+    lottiePlayer.play();
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains(scrollDown)
+  ) {
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+    lottiePlayer.stop();
+  }
+  lastScroll = currentScroll;
+});
+</script>

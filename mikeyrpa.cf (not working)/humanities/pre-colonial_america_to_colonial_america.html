@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8">
+        <title>Mikey's projects Humanities Animal mini-project | RPA</title>
+        <meta name="author" content="Mikey">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="animalminiproject.css">
+    </head>
+    <body>
+        <header class="page-header">
+            <nav>
+              <div class="trigger-menu-wrapper">
+                <button class="trigger-menu">
+                <span>The Establishment of Jamestown</span>
+                </button>
+              </div>
+            </nav>
+        </header>
+              <a href="" role="button" aria-label="Toggle menu" class="lottie-wrapper">
+                <lottie-player src="https://assets10.lottiefiles.com/datafiles/9gIwZ2uiiKglyb0/data.json" style="width: 60px; height: 60px;"></lottie-player>
+              </a>
+        <main>
+          <a href="sources.html" style="color: whitesmoke;"><h4>Sources</h4></a>
+          <hr style="border: 0px;">
+          <center>
+            <h2 style="color: #00ff15;">Who established Jamestown?</h2>
+          </center>
+            <p id="p1">
+              The Virginia Company of England established the town "Jamestown" on May 14, 1607.
+              They named it Virginia in honor for Queen Elizabeth I, who was virgin.
+            </p>
+        </center>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
+
+<script>
+    const body = document.body;
+const triggerMenu = document.querySelector(".page-header .trigger-menu");
+const nav = document.querySelector(".page-header nav");
+const lottieWrapper = document.querySelector(".lottie-wrapper");
+const lottiePlayer = document.querySelector("lottie-player");
+const scrollUp = "scroll-up";
+const scrollDown = "scroll-down";
+let lastScroll = 0;
+
+triggerMenu.addEventListener("click", () => {
+  body.classList.toggle("menu-open");
+});
+
+lottieWrapper.addEventListener("click", (e) => {
+  e.preventDefault();
+  triggerMenu.click();
+  body.classList.toggle("menu-open-with-lottie");
+});
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
+
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+    lottiePlayer.play();
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains(scrollDown)
+  ) {
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+    lottiePlayer.stop();
+  }
+  lastScroll = currentScroll;
+});
+</script>
