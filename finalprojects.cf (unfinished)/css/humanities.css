@@ -58,14 +58,25 @@ nav{
     position: absolute;
     left: 20%;
     top: 20%;
-    width: 90%;
+    width: 50%;
     max-width: 900px;
-    text-align: center;
     color: #fff;
 }
 
 .content h1{
     font-size: 50px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.content p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.atlantis-image-1{
+    width: 250px;
+    margin-left: 900px;
+    bottom: 100px;
 }

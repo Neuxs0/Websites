@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    background: #080008;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-image{
+    width: 140px;
+}
+
+.header-links{
+    padding: 28px 0;
+}
+
+.header-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.header-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.header-links li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 100%;
+    max-width: 900px;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.content p{
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff
+}
+
+.content a:link {
+    text-decoration: none;
+    color: #fff;
+    transition: ease-out 0.9s;
+    -webkit-transition: ease-out 0.9s;
+    -moz-transition: ease-out 0.9s;
+    -ms-transition: ease-out 0.9s;
+    -o-transition: ease-out 0.9s;
+}
+
+.content a:hover{
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    transition: ease-in 0.9s;
+    -webkit-transition: ease-in 0.9s;
+    -moz-transition: ease-in 0.9s;
+    -ms-transition: ease-in 0.9s;
+    -o-transition: ease-in 0.9s;
+}
+
+.header-links{
+    padding: 28px 0;
+}
+
+.content a{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.content a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.content a:after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+.content a:hover::after{
+    width: 100%;
+}

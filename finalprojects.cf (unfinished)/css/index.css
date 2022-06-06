@@ -74,6 +74,10 @@ nav{
     font-family: "poppins";
 }
 
+.name{
+    margin-bottom: 10px;
+}
+
 .category img{
     width: 25px;
     margin-bottom: 5px;
