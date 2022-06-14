@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Final Projects
+        </title>
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+    </head>
+    <body>
+        <div class="header">
+
+            <video autoplay loop class="background-video" muted plays-inline>
+                <source src="assets/video/Home-Background.mp4" type="video/mp4">
+            </video>
+
+            <nav>
+                <img src="assets/img/Header-Image.png" class="header-image">
+                <ul class="header-links">
+                    <li class="index-header"><a href="index.html">Home</a></li>
+                    <li><a href="humanities.html">Humanities</a></li>
+                    <li><a href="https://github.com/Neuxs0/Websites/tree/School-Websites/finalprojects.cf%20(unfinished)" target="_blank" rel="noopener noreferrer">Source Code</a></li>
+                    <li><a href="citations.html">Cites</a></li>
+                </ul>
+            </nav>
+
+            <div class="content">
+                <h1>Final Projects</h1>
+
+                <p>
+                    This website is dedicated to the final projects of the school year from RPA middle school.
+                </p>
+
+                <p class="name">
+                    Made by: Mikey
+                </p>
+                <p2>
+                    May 17th - June 7th
+                </p2>
+            </div>
+
+        </div>
+    </body>
+</html>
+<script>
+var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+if (a.indexOf('html') > -1) { //Check of html String in URL.
+   url = url.substring(0, newURL.lastIndexOf("."));
+}
+</script>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-image{
+    width: 140px;
+}
+
+.header-links{
+    padding: 28px 0;
+}
+
+.header-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.header-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.header-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.header-links li a:hover::after{
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.content p{
+    margin-bottom: 30px;
+    font-family: "poppins";
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+.category img{
+    width: 25px;
+    margin-bottom: 5px;
+}
+
+.background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+</style>
